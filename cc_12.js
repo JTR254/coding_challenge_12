@@ -20,4 +20,14 @@ revenueCard.appendChild(value);
 
 dashboardId.appendChild(revenueCard);
 
+// Task 2 - Updated Metric Cards via Array Conversion
+
+const metricCards = document.querySelectorAll(".metric-card") // selects all within the class "metric-card"
+
+const metricCardsArray = Array.from(metricCards) // creates an array from metricCards
+
+metricCardsArray.forEach(card => { // for each card, in the heading, add " - Updated"
+    const title = card.querySelector("h3");
+    title.textContent += " - Updated";
+})
 
