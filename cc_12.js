@@ -47,3 +47,4 @@ function addInventoryItem(product) { // creates a function that adds inventory i
 addInventoryItem("Click me"); // adds a "click me" button
 addInventoryItem("Add a product below"); // adds a "add a product below" button
 
+// Task 4 - Demonstrated Event Bubbling in Customer Section
