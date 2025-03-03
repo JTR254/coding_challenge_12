@@ -31,3 +31,19 @@ metricCardsArray.forEach(card => { // for each card, in the heading, add " - Upd
     title.textContent += " - Updated";
 })
 
+// Task 3 - Implemented Dynamic Inventory List
+
+const intentoryList = document.getElementById("inventoryList"); 
+
+function addInventoryItem(product) { // creates a function that adds inventory items
+    let newLi = document.createElement ("li");
+    newLi.setAttribute("class", "product-item"); // adds a class
+    newLi.setAttribute("dataset", product); // adds a dataset
+    newLi.addEventListener("click", () => {removeInentoryItem(newLi)});
+    newLi.textContent = product;
+    inventoryList.appendChild(newLi); // appends the item to the inventory list
+};
+
+addInventoryItem("Click me"); // adds a "click me" button
+addInventoryItem("Add a product below"); // adds a "add a product below" button
+
